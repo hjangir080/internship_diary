@@ -3,28 +3,16 @@ import mesop as me
 SAMPLE_MARKDOWN = """
 ### Internship Diary
 
-#### Day 1 - 03/06/2024
-On my first day, I delved into several new technologies and tools, setting a strong foundation for the rest of my internship. Here’s a detailed account of what I accomplished:
+#### Day 15 - 24/06/2024
 
-- **MongoDB Introduction and Setup:**
-  - **Learning MongoDB:** I began by learning the basics of MongoDB, a popular NoSQL database.
-  - **Setting Up MongoDB Compass:** Installed and configured MongoDB Compass, a graphical user interface for MongoDB.
-  - **Python Integration with PyMongo:** Connected MongoDB with Python using the PyMongo library.
-  - **CRUD Operations:** Performed CRUD (Create, Read, Update, Delete) operations on a MongoDB database using Python.
-  - **Dataframe Display:** Displayed the database contents in dataframes for better visualization and manipulation.
+**Internship Diary Website**
 
-- **Docker Exploration:**
-  - **Learning Docker:** Gained an understanding of Docker, a platform for developing, shipping, and running applications inside containers.
-  - **Installing Docker:** Successfully installed Docker on my machine.
-  - **Creating and Hosting Docker Images:** Created a Docker image from a repository and hosted it, facilitating easier deployment and management of applications.
+I began working on a project using Mesop and Python to create an internship diary website. This website allows me to upload my daily and weekly summaries or diary entries and includes a chatbot that can read through these entries and answer queries accordingly. Using the official Mesop repository on GitHub, I set up a basic functioning website.
 
-- **AI Tools and Concepts:**
-  - **AI Studios and GPTs:** Briefly explored various AI studios and GPT (Generative Pre-trained Transformer) models, including:
-    - Mistral AI
-    - Groq AI
-    - Google AI Studio
-  - **Retrieval Augmented Generation (RAG):** Introduced to RAG, a technique combining retrieval and generation for improved performance in AI models.
-  - **Word2Vec:** Learned about Word2Vec, a method for generating word embeddings that capture semantic meanings of words.
+- **Topics Learned:**
+    - Mesop and Python integration
+    - Internship diary website development
+    - Chatbot integration for diary entries
 
 """
 

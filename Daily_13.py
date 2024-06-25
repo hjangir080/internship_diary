@@ -4,12 +4,17 @@ SAMPLE_MARKDOWN = """
 ### Internship Diary
 
 #### Day 13 - 20/06/2024
-Completed the chatbot and worked on its frontend and backend.
 
-- **Chatbot Completion:**
-  - **Frontend Development:** Worked on the HTML and CSS for the chatbot’s frontend.
-  - **Backend Development:** Used Flask for the backend, making corrections to handle JSON outputs and ensuring function results are properly integrated with GPT responses.
-  - **GitHub Upload:** Uploaded the completed project to GitHub.
+**Library Bot Development**
+
+I completed the library bot, working on its HTML and CSS frontend and using Flask for the backend. I made necessary corrections to handle JSON outputs and ensure the function results were properly processed by GPT for a response. The project was then uploaded to GitHub.
+
+- **Topics Learned:**
+    - Library bot development
+    - HTML and CSS frontend design
+    - Flask backend development
+    - JSON output handling
+
 """
 
 

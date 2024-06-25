@@ -4,15 +4,20 @@ SAMPLE_MARKDOWN = """
 ### Internship Diary
 
 #### Day 2 - 04/06/2024
-On the second day, I continued my exploration of Docker and started integrating it with other technologies.
 
-- **Docker and Flask Integration:**
-  - **Docker Images:** Worked more on Docker images, converting a Flask application into a Docker image.
-  - **OpenDevin Software:** Used the Docker image to start and use OpenDevin software, learning about API keys and different GPT versions.
+**Docker Images and CrewAI Chatbot**
 
-- **CrewAI Documentation:**
-  - **Simple Chatbot:** Reviewed CrewAI documentation and created a simple chatbot that takes input for roles, tasks, and goals, and uses GoogleSerperTool to find relevant articles and present the gathered information.
+Today's focus was on Docker images. I converted a Flask application into a Docker image, which was a great hands-on experience. Using this Docker image, I started and used the OpenDevin software, learning about API keys and different versions of GPTs in the process.
 
+I also explored CrewAI's documentation and developed a simple chatbot. The chatbot could take inputs such as role, task, and goal, and then use the GoogleSerperTool to search the internet for relevant articles, presenting the gathered information as required.
+
+- **Topics Learned:**
+    - Docker image creation
+    - Flask application Docker conversion
+    - OpenDevin software usage
+    - API keys and GPT versions
+    - CrewAI documentation and chatbot development
+    - GoogleSerperTool integration
 """
 
 

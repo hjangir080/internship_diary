@@ -3,28 +3,21 @@ import mesop as me
 SAMPLE_MARKDOWN = """
 ### Internship Diary
 
-#### Day 1 - 03/06/2024
-On my first day, I delved into several new technologies and tools, setting a strong foundation for the rest of my internship. Here’s a detailed account of what I accomplished:
+####  Day 1 - 03/06/2024
 
-- **MongoDB Introduction and Setup:**
-  - **Learning MongoDB:** I began by learning the basics of MongoDB, a popular NoSQL database.
-  - **Setting Up MongoDB Compass:** Installed and configured MongoDB Compass, a graphical user interface for MongoDB.
-  - **Python Integration with PyMongo:** Connected MongoDB with Python using the PyMongo library.
-  - **CRUD Operations:** Performed CRUD (Create, Read, Update, Delete) operations on a MongoDB database using Python.
-  - **Dataframe Display:** Displayed the database contents in dataframes for better visualization and manipulation.
+**MongoDB and Docker Exploration**
 
-- **Docker Exploration:**
-  - **Learning Docker:** Gained an understanding of Docker, a platform for developing, shipping, and running applications inside containers.
-  - **Installing Docker:** Successfully installed Docker on my machine.
-  - **Creating and Hosting Docker Images:** Created a Docker image from a repository and hosted it, facilitating easier deployment and management of applications.
+Today was an introduction to MongoDB and Docker. I started by learning about MongoDB, setting up MongoDB Compass, and connecting it with Python using the `pymongo` library. I practiced CRUD operations using Python on a MongoDB database and displayed the results in dataframes. 
 
-- **AI Tools and Concepts:**
-  - **AI Studios and GPTs:** Briefly explored various AI studios and GPT (Generative Pre-trained Transformer) models, including:
-    - Mistral AI
-    - Groq AI
-    - Google AI Studio
-  - **Retrieval Augmented Generation (RAG):** Introduced to RAG, a technique combining retrieval and generation for improved performance in AI models.
-  - **Word2Vec:** Learned about Word2Vec, a method for generating word embeddings that capture semantic meanings of words.
+Next, I delved into Docker. I installed Docker, created an image of a repository, and hosted it successfully. 
+
+I also encountered terms and platforms related to AI studios, such as Mistral AI, Groq AI, and Google AI Studio.
+
+- **Topics Learned:**
+    - MongoDB setup and connection
+    - CRUD operations with MongoDB using Python
+    - Docker installation and image hosting
+    - AI studios
 
 """
 

@@ -4,13 +4,16 @@ SAMPLE_MARKDOWN = """
 ### Internship Diary
 
 #### Day 8 - 12/06/2024
-Continued working on the optimization project and explored more tools.
 
-- **Graph Creation and Pathfinding:**
-  - **NetworkX:** Successfully created a graph using NetworkX and found a path, although the entire dataset could not be processed.
+**Assistant API and Project Work**
 
-- **Assistant API:**
-  - **Exploration:** Learned more about the Assistant API and its applications.
+Today, I continued working on the project and successfully created a graph using NetworkX and found a path, although the entire dataset could not be processed. 
+I also learned more about the Assistant API. Progress was steady, and I gathered more insights into how to enhance the project's functionality.
+
+- **Topics Learned:**
+    - NetworkX
+    - Assistant API functionality
+
 """
 
 

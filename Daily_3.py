@@ -4,16 +4,24 @@ SAMPLE_MARKDOWN = """
 ### Internship Diary
 
 #### Day 3 - 05/06/2024
-The third day was focused on enhancing the multi-agent system using CrewAI for rescue operations.
 
-- **CrewAI Multi-Agent Tool Development:**
-  - **Open Meteo API Integration:** Integrated the Open Meteo API for accurate hourly weather and sea wave conditions.
-  - **Designing Agents:** Created agents (researcher, navigator, doctor) for rescue operations, each performing specific tasks:
-    - **Researcher:** Finds older cases near the same area.
-    - **Navigator:** Finds all possible paths taken by the ship.
-    - **Doctor:** Diagnoses possible illnesses and injuries and lists needed medical supplies.
-  - **Report Generation:** Integrated OpenAI API and Serper API to compile a comprehensive report and convert it to a PDF.
+**CrewAI Multi-Agent Tool**
 
+Today, I enhanced my work with CrewAI by developing a multi-agent tool. I integrated the Open Meteo API to get accurate hourly weather and sea wave conditions based on user-provided latitude and longitude values. These coordinates were then used by three agents: a researcher, a navigator, and a doctor. 
+
+- The researcher found historical cases in the same area.
+- The navigator identified all possible paths taken by the ship.
+- The doctor diagnosed potential illnesses and injuries among survivors, listing necessary medical supplies.
+
+These inputs, combined with OpenAI API and Serper API integrations, were compiled into a comprehensive report, which I then converted into a PDF.
+
+- **Topics Learned:**
+    - CrewAI multi-agent development
+    - Open Meteo API integration
+    - Historical case research via agents
+    - Navigation pathfinding via agents
+    - Medical diagnosis of potential diseases and supply listing via agents and google search
+    - PDF report generation
 """
 
 

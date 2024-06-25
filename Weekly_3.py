@@ -3,29 +3,21 @@ import mesop as me
 SAMPLE_MARKDOWN = """
 ### Weekly Internship Summary
 
-#### Week 3 (17/06/2024 - 21/06/2024)
-The third week involved completing the route optimization project, learning new APIs, and developing a chatbot with a complete frontend and backend.
+#### Week 3 (18/06/2024 - 21/06/2024)
 
-- **Route Optimization Project Completion (Day 11):**
-  - Finished the sea route optimization project and uploaded it to GitHub.
-  - Faced issues with data incompleteness and processing due to the large dataset.
+**Summary:**
+This week, I completed the code for the route optimization project and uploaded it to GitHub. I also started learning about the Chat Completion API by OpenAI and created a library bot using the Internet Archive API. I worked on its frontend using HTML and CSS, and backend using Flask, ensuring it handled JSON outputs correctly. Finally, I deployed the library bot using Render and explored the Mesop UI framework.
 
-- **Chat Completion API and Library Bot (Day 12):**
-  - Learned about the Chat Completion API by OpenAI.
-  - Developed a library bot using the Chat Completion API and the Internet Archive API, incorporating chat completion and function calling.
+- **Accomplishments:**
+    - **Route Optimization Completion:** Finished the code for the route optimization project, successfully uploaded it to GitHub, and demonstrated its functionality using Google Colab.
+    - **Library Bot Development:** Created a fully functional library bot using the Internet Archive API, integrating chat completion with function calling.
+    - **Successful Deployment:** Deployed the library bot on Render, making it live and accessible.
 
-- **Chatbot Development (Day 13):**
-  - Completed the library bot with a polished HTML, CSS frontend, and Flask backend.
-  - Uploaded the project to GitHub after resolving issues with handling JSON outputs and integrating function results with GPT responses.
+- **Challenges:**
+    - **Complex API Usage:** Working with the Chat Completion API and integrating it with function calling for the library bot required a thorough understanding of API functionalities.
+    - **Frontend and Backend Coordination:** Ensuring smooth interaction between the HTML/CSS frontend and Flask backend for the library bot posed several challenges.
+    - **Deployment Issues:** Deploying the chatbot using Render and ensuring it was live and functional involved overcoming several technical hurdles.
 
-- **Chatbot Deployment and UI Framework Exploration (Day 14):**
-  - Deployed the chatbot using Render, making it live.
-  - Began exploring Mesop, a new UI framework by Google employees.
-
-### Challenges Faced in Week 3
-- **Data Incompleteness and Processing Issues:** Encountered challenges with data incompleteness and processing due to the large dataset size while completing the sea route optimization project.
-- **Backend Corrections:** Faced and resolved issues with handling JSON outputs in the chatbot backend to ensure proper function result integration with GPT responses.
-- **Deployment Challenges:** Successfully deployed the chatbot but had to ensure it worked seamlessly in a live environment.
 """
 
 

@@ -4,12 +4,15 @@ SAMPLE_MARKDOWN = """
 ### Internship Diary
 
 #### Day 14 - 21/06/2024
-Deployed the chatbot and started exploring a new UI framework.
 
-- **Chatbot Deployment:**
-  - **Render Deployment:** Deployed the chatbot using Render, making it live.
-- **New UI Framework:**
-  - **Mesop Exploration:** Began looking into Mesop, a new UI framework developed by Google employees.
+**Chatbot Deployment and Mesop Exploration**
+
+I deployed the chatbot code using Render, making it live. Additionally, I started exploring Mesop, a new UI framework developed by Google employees.
+
+- **Topics Learned:**
+    - Deployment using Render
+    - Mesop UI framework
+
 """
 
 

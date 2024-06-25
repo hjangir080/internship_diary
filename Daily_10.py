@@ -4,15 +4,16 @@ SAMPLE_MARKDOWN = """
 ### Internship Diary
 
 #### Day 10 - 14/06/2024
-Successfully resolved collaboration issues and explored new tools.
 
-- **Agent Collaboration:**
-  - **Issue Resolution:** Got the agents collaborating with each other, resolving the error.
-  - **Program Functionality:** Ensured the program can access all tools, tasks, and agents properly.
-  - **Input Parsing Issue:** Encountered an issue with how the input is being parsed and passed along.
+**Agent Collaboration and Input Parsing**
 
-- **Assistant's Playground:**
-  - **Exploration:** Explored the Assistant's Playground on the OpenAI platform.
+I resolved the error in agent collaboration, enabling them to access all tools, tasks, and agents properly. However, an issue arose with how inputs were parsed and passed along. I also explored the Assistant's Playground on the OpenAI platform for additional insights.
+
+- **Topics Learned:**
+    - Agent collaboration
+    - Input parsing and handling
+    - Assistant's Playground
+
 """
 
 

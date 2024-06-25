@@ -4,13 +4,19 @@ SAMPLE_MARKDOWN = """
 ### Internship Diary
 
 #### Day 5 - 07/06/2024
-The final day of the first week was dedicated to exploring new AI tools and completing a guided project.
 
-- **LangChain and RAG Exploration:**
-  - **Principles and Applications:** Studied LangChain and RAG principles and their applications.
-  - **Guided Project:** Completed a guided project using these tools along with Google API and OpenAI to parse, embed, and query PDFs.
-  - **Hosting and Deployment:** Began exploring hosting and deployment options.
-  - **Hugging Face:** Briefly reviewed Hugging Face, a popular platform for NLP models.
+**LangChain and RAG Exploration**
+
+Today, I dived into LangChain and RAG, understanding their principles and essence. I undertook a guided project using these tools along with Google API and OpenAI. I learned how LangChain converts and detects text chunks, which are then embedded using APIs to find similarity indices and answer queries. I created a simple program to upload, parse, and embed a PDF using OpenAI API and LangChain tools, allowing me to run queries on it. I also briefly explored Hugging Face.
+
+- **Topics Learned:**
+    - LangChain
+    - RAG (Retrieval Augmented Generation)
+    - Text chunking and embedding
+    - Similarity index calculation
+    - PDF upload, parsing, and embedding
+    - Hugging Face exploration
+
 """
 
 

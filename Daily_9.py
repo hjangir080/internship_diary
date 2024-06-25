@@ -4,11 +4,15 @@ SAMPLE_MARKDOWN = """
 ### Internship Diary
 
 #### Day 9 - 13/06/2024
-Worked on resolving issues with multi-agent collaboration and tool integration.
 
-- **Multi-Agent Collaboration:**
-  - **Tool Functionality:** Managed to write the code for all tools, ensuring they work together properly.
-  - **Collaboration Challenge:** Faced challenges with multi-agent collaboration, where agents did not respond well when called through the multi-agent system.
+**Tool Integration and Multi-Agent Collaboration**
+
+I successfully wrote the code for all tools, ensuring they work together seamlessly. Despite facing challenges with multi-agent collaboration, the individual tool functionalities are operating correctly.
+
+- **Topics Learned:**
+    - Tool integration
+    - Multi-agent collaboration
+
 """
 
 

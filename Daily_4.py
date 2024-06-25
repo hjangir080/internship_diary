@@ -4,11 +4,18 @@ SAMPLE_MARKDOWN = """
 ### Internship Diary
 
 #### Day 4 - 06/06/2024
-On the fourth day, I focused on learning and applying multi-agent programming concepts.
 
-- **AI Agent Courses and Projects:**
-  - **CrewAI and DeepLearning.AI Course:** Completed a course by CrewAI and DeepLearning.AI, creating four projects and uploading them to GitHub.
-  - **Learning Outcomes:** Covered key elements of AI agents, agent tools, well-defined tasks, and multi-agent collaboration.
+**CrewAI Projects and Learning**
+
+I continued working on CrewAI multi-agent programs. I completed a course by CrewAI and Deeplearning.AI, during which I created six projects and uploaded them to GitHub. The course covered key elements of AI agents, their tools, well-defined tasks, and multi-agent collaboration.
+
+- **Topics Learned:**
+    - CrewAI multi-agent programs
+    - AI agent key elements
+    - AI agent tools
+    - Well-defined tasks for AI agents
+    - Multi-agent collaboration
+
 """
 
 

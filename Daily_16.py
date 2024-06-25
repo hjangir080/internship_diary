@@ -3,17 +3,16 @@ import mesop as me
 SAMPLE_MARKDOWN = """
 ### Internship Diary
 
-#### Day 6 - 10/06/2024
+#### Day 16 - 25/06/2024
 
-**Word Embeddings and Sea Route Optimization**
+**Website Completion and Hosting**
 
-I focused on understanding word embeddings, exploring Word2Vec, GloVe, FastText, and ELMo. I learned how models deduce relations and context. Additionally, I started outlining a sea route optimization project using Dijkstra's algorithm, CrewAI agents, and RAG.
+I finished the website's functionalities and improved the CSS for a more appealing design. The website was then uploaded to GitHub and hosted using Render. I also started researching how to ensure the website can function asynchronously on multiple devices simultaneously.
 
 - **Topics Learned:**
-    - Word embeddings
-    - Relationship and context deduction by models
-    - Dijkstra's algorithm
-    - CrewAI agents and RAG integration
+    - Deployment using Render
+    - Mesop UI framework
+    - Asynchronous functionality research
 
 """
 
@@ -22,7 +21,7 @@ I focused on understanding word embeddings, exploring Word2Vec, GloVe, FastText,
   security_policy=me.SecurityPolicy(
     allowed_iframe_parents=["https://google.github.io"]
   ),
-  path="/post/Daily_6",
+  path="/post/Daily_16",
 )
 def app():
   header()

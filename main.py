@@ -18,11 +18,13 @@ import Daily_11 as Daily_11
 import Daily_12 as Daily_12
 import Daily_13 as Daily_13
 import Daily_14 as Daily_14
-# import Daily_15 as Daily_15
+import Daily_15 as Daily_15
+import Daily_16 as Daily_16
 
 import Weekly_1 as Weekly_1
 import Weekly_2 as Weekly_2
 import Weekly_3 as Weekly_3
+import Weekly_4 as Weekly_4
 
 # Ensure the current directory is in the system path
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -57,7 +59,8 @@ FIRST_SECTIONS = [
             Example(name="Daily_12", image_url="https://i.ibb.co/y44gLtv/june.png"),
             Example(name="Daily_13", image_url="https://i.ibb.co/y44gLtv/june.png"),
             Example(name="Daily_14", image_url="https://i.ibb.co/y44gLtv/june.png"),
-            # Example(name="Daily_15", image_url="https://i.ibb.co/y44gLtv/june.png"),
+            Example(name="Daily_15", image_url="https://i.ibb.co/y44gLtv/june.png"),
+            Example(name="Daily_16", image_url="https://i.ibb.co/y44gLtv/june.png"),
         ],
     ),
     Section(
@@ -66,6 +69,7 @@ FIRST_SECTIONS = [
             Example(name="Weekly_1", image_url="https://i.ibb.co/bR4wxq4/june-weekly.png"),
             Example(name="Weekly_2", image_url="https://i.ibb.co/bR4wxq4/june-weekly.png"),
             Example(name="Weekly_3", image_url="https://i.ibb.co/bR4wxq4/june-weekly.png"),
+            Example(name="Weekly_4", image_url="https://i.ibb.co/bR4wxq4/june-weekly.png"),
         ],
     ),
     Section(

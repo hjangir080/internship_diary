@@ -4,11 +4,17 @@ SAMPLE_MARKDOWN = """
 ### Internship Diary
 
 #### Day 12 - 19/06/2024
-Began learning about the Chat Completion API by OpenAI and developed a library bot.
 
-- **Chat Completion API:**
-  - **Learning:** Started learning about the Chat Completion API by OpenAI.
-  - **Library Bot Development:** Created a simple chatbot using the Chat Completion API and the Internet Archive API. The bot can provide information about any book or music in the database by its ID, incorporating chat completion along with function calling.
+**Chat Completion API and Library Bot**
+
+I began learning about the Chat Completion API by OpenAI and created simple chatbots using it. I developed a library bot utilizing the Internet Archive API, which could provide information about any book or music in the database by its ID. The chatbot combined chat completion with function calling for enhanced functionality.
+
+- **Topics Learned:**
+    - Chat Completion API by OpenAI
+    - Simple chatbot creation
+    - Internet Archive API integration
+    - Function calling in chatbots
+
 """
 
 

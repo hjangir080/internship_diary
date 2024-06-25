@@ -4,33 +4,19 @@ SAMPLE_MARKDOWN = """
 ### Weekly Internship Summary
 
 #### Week 2 (10/06/2024 - 14/06/2024)
-The second week was focused on advancing projects, learning new tools, and overcoming technical challenges. Here’s a comprehensive summary of the week:
 
-- **Word Embeddings Study (Day 6):**
-  - Explored various word embedding techniques such as Word2Vec, GloVe, FastText, and ELMo, understanding their role in deducing relations and context.
-  - Began planning a sea route optimization project using Dijkstra or A* algorithms and CrewAI agents.
+**Summary:**
+This week, I delved deeper into Docker, working on converting a Flask application to a Docker image and starting the OpenDevin software using Docker. I also explored CrewAI's documentation, developed a simple chatbot, and created a multi-agent tool integrating the Open Meteo API for weather and sea wave conditions. Additionally, I undertook a guided project to understand and implement LangChain and RAG, creating a program to embed and query PDFs.
 
-- **Route Optimization Project (Day 7):**
-  - Used GeoPandas for data reading and integrated CrewAI agents, tasks, and tools.
-  - Encountered challenges with data processing due to RAM limitations when creating a graph using NetworkX.
+- **Accomplishments:**
+    - **Advanced AI Projects:** Developed a multi-agent tool with CrewAI, integrating the Open Meteo API and creating detailed reports.
+    - **LangChain Implementation:** Successfully created a program to upload, parse, and embed PDFs using OpenAI API and LangChain tools.
+    - **Tool Integration:** Ensured that various AI tools and agents worked together seamlessly, resolving multi-agent collaboration issues.
 
-- **Graph Creation and Pathfinding (Day 8):**
-  - Successfully created a graph using NetworkX and found a path, although the entire dataset could not be processed.
-  - Explored the Assistant API.
-
-- **Multi-Agent Collaboration (Day 9):**
-  - Ensured all tools work together properly but faced challenges with multi-agent collaboration.
-
-- **Agent Collaboration and New Tools (Day 10):**
-  - Resolved agent collaboration issues and ensured the program can access all tools, tasks, and agents properly.
-  - Encountered and began addressing an issue with input parsing and passing.
-  - Explored the Assistant's Playground on the OpenAI platform.
-
-### Challenges Faced in Week 2
-- **Data Processing Limits:** Encountered significant challenges with data processing limits due to the RAM being completely used up when creating a graph using NetworkX from a very large dataset.
-- **Agent Collaboration Issues:** Initially faced difficulties in establishing effective multi-agent collaboration where the agents did not respond well when called through the multi-agent system. This was later resolved.
-- **Input Parsing Problems:** After resolving collaboration issues, encountered problems with how the input is being parsed and passed along within the program.
-- **Optimization Project Complexity:** The sea route optimization project required detailed planning and integration of multiple tools, leading to challenges in execution due to data processing constraints.
+- **Challenges:**
+    - **Data Processing:** Encountered significant challenges with processing large datasets, especially when creating graphs using NetworkX. The system's RAM limitations caused execution to stop.
+    - **Multi-Agent Collaboration:** Ensuring seamless interaction among multiple AI agents and integrating various APIs was complex.
+    - **LangChain and RAG:** Understanding and implementing LangChain and RAG for text chunking and embedding was intricate.
 
 """
 

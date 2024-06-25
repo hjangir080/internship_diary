@@ -4,36 +4,21 @@ SAMPLE_MARKDOWN = """
 ### Weekly Internship Summary
 
 #### Week 1 (03/06/2024 - 07/06/2024)
-The first week of my internship was highly productive, filled with learning and practical application of various technologies. Here’s a comprehensive summary of the week:
 
-- **Day 1 Achievements:**
-  - Set up and configured MongoDB, integrated it with Python using PyMongo, and performed CRUD operations.
-  - Learned about Docker, installed it, and created and hosted a Docker image.
-  - Briefly explored several AI studios and GPT models, and learned about RAG and Word2Vec.
+**Summary:**
+In the first week, I focused on setting up and learning the fundamentals of MongoDB and Docker. I connected MongoDB with Python, performed CRUD operations, and displayed data using dataframes. I also created and hosted a Docker image of a repository. Throughout the week, I briefly touched on AI studios like Mistral AI, Groq AI, and Google AI Studio.
 
-- **Docker and Flask Integration (Day 2):**
-  - Continued working on Docker by converting a Flask application into a Docker image.
-  - Used the Docker image to start and use OpenDevin software, gaining knowledge about API keys and GPT versions.
-  - Reviewed CrewAI documentation and created a simple chatbot using GoogleSerperTool to search the internet and present relevant information.
+- **Accomplishments:**
+    - **MongoDB Setup:** Successfully set up MongoDB Compass and connected it with Python.
+    - **CRUD Operations:** Performed CRUD operations on MongoDB using Python and displayed data in dataframes.
+    - **Docker Mastery:** Created and hosted a Docker image, gaining a solid understanding of Docker.
+    - **AI Exploration:** Developed a simple chatbot using CrewAI, integrating various APIs, and got hands-on experience with AI tools.
 
-- **CrewAI Multi-Agent Tool Development (Day 3):**
-  - Developed a multi-agent tool using CrewAI, integrating the Open Meteo API for accurate hourly weather and sea wave conditions.
-  - Designed agents (researcher, navigator, doctor) for rescue operations, integrating OpenAI API and Serper API to compile comprehensive reports and convert them to PDFs.
+- **Challenges:**
+    - **Learning Curve:** Getting accustomed to MongoDB, Docker, and various AI tools was challenging. There was a steep learning curve, especially in understanding and setting up MongoDB Compass and Docker.
+    - **Integration Issues:** Connecting MongoDB with Python using `pymongo` and performing CRUD operations required careful attention to detail.
+    - **AI Concepts:** Understanding advanced AI concepts in a short time was demanding.
 
-- **AI Agent Courses and Projects (Day 4):**
-  - Worked on CrewAI multi-agent programs and completed a course by CrewAI and DeepLearning.AI.
-  - Created and uploaded projects to GitHub, learning key elements of AI agents, agent tools, well-defined tasks, and multi-agent collaboration.
-
-- **LangChain and RAG Exploration (Day 5):**
-  - Studied LangChain and RAG principles and their applications.
-  - Completed a guided project using these tools with Google API and OpenAI to parse, embed, and query PDFs.
-  - Began exploring hosting and deployment, and briefly reviewed Hugging Face.
-
-### Challenges Faced in Week 1
-- **Docker Learning Curve:** Initially challenging to understand and set up Docker.
-- **API Key Management:** Understanding and managing API keys while working with OpenDevin software.
-- **CrewAI Documentation Navigation:** Navigating and comprehending the extensive CrewAI documentation to create a functional chatbot.
-- **Multi-Agent Integration:** Ensuring seamless integration and communication between multiple agents and APIs in the rescue operation tool.
 """
 
 

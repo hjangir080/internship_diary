@@ -4,12 +4,18 @@ SAMPLE_MARKDOWN = """
 ### Internship Diary
 
 #### Day 7 - 11/06/2024
-Progressed on the sea route optimization project and encountered some challenges.
 
-- **Route Optimization Project:**
-  - **Data Reading:** Used GeoPandas to read geographical data.
-  - **Integration:** Started working on integrating CrewAI agents, tasks, and tools for the project.
-  - **Data Processing Challenge:** Faced issues with processing the entire dataset due to RAM limitations when creating a graph using NetworkX from a very large dataset.
+**Route Optimization Project**
+
+I worked on the route optimization project, utilizing GeoPandas to read data. I found similar projects on GitHub and started implementing CrewAI agents, tasks, and tools. However, processing the entire data set was challenging, as my system's RAM was completely used up, causing execution to stop after two hours. This issue arose while trying to create a graph using NetworkX from the extensive data.
+
+- **Topics Learned:**
+    - Route optimization project development
+    - GeoPandas data reading
+    - GitHub project exploration
+    - CrewAI agents, tasks, and tools
+    - NetworkX graph creation
+
 """
 
 

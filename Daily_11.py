@@ -4,13 +4,21 @@ SAMPLE_MARKDOWN = """
 ### Internship Diary
 
 #### Day 11 - 18/06/2024
-On the twelfth day, I completed the sea route optimization project and uploaded it to GitHub.
+
+**Route Optimization Completion**
+
+I finished the code for route optimization using Google Colab and uploaded it to GitHub. This was a significant milestone in the project, marking the completion of a crucial component.
+
+- **Topics Learned:**
+    - Route optimization code finalization
+    - Google Colab
 
 - **Project Completion:**
-  - **Route Optimization:** Finished the sea route optimization project, ensuring all aspects of the project were functional.
-  - **GitHub Upload:** Uploaded the completed project to GitHub.
-  - **Challenges:** Encountered some issues with data incompleteness and processing due to the large dataset.
-"""
+    - **Route Optimization:** Finished the sea route optimization project, ensuring all aspects of the project were functional.
+    - **GitHub Upload:** Uploaded the completed project to GitHub.
+    - **Challenges:** Encountered some issues with data incompleteness and processing due to the large dataset.
+
+    """
 
 
 @me.page(
