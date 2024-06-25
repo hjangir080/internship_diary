@@ -32,6 +32,7 @@ if current_dir not in sys.path:
 @dataclass
 class Example:
     name: str
+    image_url: str
 
 @dataclass
 class Section:
@@ -41,15 +42,37 @@ class Section:
 FIRST_SECTIONS = [
     Section(
         name="Daily Report",
-        examples=[Example(name=f"Daily_{i}") for i in range(1, 15)],
+        examples=[
+            Example(name="Daily_1", image_url="https://i.ibb.co/y44gLtv/june.png"),
+            Example(name="Daily_2", image_url="https://i.ibb.co/y44gLtv/june.png"),
+            Example(name="Daily_3", image_url="https://i.ibb.co/y44gLtv/june.png"),
+            Example(name="Daily_4", image_url="https://i.ibb.co/y44gLtv/june.png"),
+            Example(name="Daily_5", image_url="https://i.ibb.co/y44gLtv/june.png"),
+            Example(name="Daily_6", image_url="https://i.ibb.co/y44gLtv/june.png"),
+            Example(name="Daily_7", image_url="https://i.ibb.co/y44gLtv/june.png"),
+            Example(name="Daily_8", image_url="https://i.ibb.co/y44gLtv/june.png"),
+            Example(name="Daily_9", image_url="https://i.ibb.co/y44gLtv/june.png"),
+            Example(name="Daily_10", image_url="https://i.ibb.co/y44gLtv/june.png"),
+            Example(name="Daily_11", image_url="https://i.ibb.co/y44gLtv/june.png"),
+            Example(name="Daily_12", image_url="https://i.ibb.co/y44gLtv/june.png"),
+            Example(name="Daily_13", image_url="https://i.ibb.co/y44gLtv/june.png"),
+            Example(name="Daily_14", image_url="https://i.ibb.co/y44gLtv/june.png"),
+            # Example(name="Daily_15", image_url="https://i.ibb.co/y44gLtv/june.png"),
+        ],
     ),
     Section(
         name="Weekly Report",
-        examples=[Example(name=f"Weekly_{i}") for i in range(1, 4)],
+        examples=[
+            Example(name="Weekly_1", image_url="https://i.ibb.co/bR4wxq4/june-weekly.png"),
+            Example(name="Weekly_2", image_url="https://i.ibb.co/bR4wxq4/june-weekly.png"),
+            Example(name="Weekly_3", image_url="https://i.ibb.co/bR4wxq4/june-weekly.png"),
+        ],
     ),
     Section(
         name="Chatbot",
-        examples=[Example(name="chatbot")],
+        examples=[
+            Example(name="chatbot", image_url="https://i.ibb.co/MgJ3Gdc/chatbot.jpg"),
+        ],
     ),
 ]
 
@@ -65,7 +88,7 @@ BORDER_SIDE = me.BorderSide(
 )
 def main_page():
     header()
-    with me.box(style=me.Style(flex_grow=1, display="flex")):
+    with me.box(style=me.Style(flex_grow=1, display="flex",height="91%", overflow_y="auto", overflow_x="auto")):
         if is_desktop():
             side_menu()
         with me.box(style=me.Style(
@@ -74,22 +97,26 @@ def main_page():
             gap=24,
             flex_direction="column",
             padding=me.Padding.all(24),
-            overflow_y="auto"
+            overflow_y="auto",
+            background="#F7F4F3",
         )):
             for section in FIRST_SECTIONS:
                 section_box(section)
 
 def header():
     with me.box(style=me.Style(
+        background="#1C2541",
         border=me.Border(bottom=me.BorderSide(style="solid", width=1, color="#dcdcdc")),
         overflow_x="clip",
     )):
         with me.box(style=me.Style(
+            padding=me.Padding(top=12, right=12, left=12, bottom=12),
             display="flex",
             align_items="end",
             justify_content="space-between",
-            margin=me.Margin(left=12, right=12, bottom=12, top=12),
+            # margin=me.Margin(left=12, right=12, bottom=12),
             font_size=24,
+            color="#BFACC8",
         )):
             with me.box(style=me.Style(display="flex")):
                 with me.box(style=me.Style(display="flex", cursor="pointer"), on_click=navigate_home):
@@ -107,8 +134,9 @@ def side_menu():
         line_height="1.5",
         border=me.Border(right=BORDER_SIDE),
         overflow_x="hidden",
-        height="calc(100vh - 60px)",
+        height="calc(100vh - 50px)",
         overflow_y="auto",
+        background="#1C2541",
     )):
         for section in FIRST_SECTIONS:
             nav_section(section)
@@ -117,11 +145,11 @@ def side_menu():
 
 def nav_section(section: Section):
     with me.box(style=me.Style(margin=me.Margin(bottom=12))):
-        me.text(section.name, style=me.Style(font_weight=700))
+        me.text(section.name, style=me.Style(font_weight=700,color="#BFACC8"))
         for example in section.examples:
             example_name = format_example_name(example.name)
             path = f"/post/{example.name}"
-            with me.box(style=me.Style(color="#0B57D0", cursor="pointer"), on_click=set_demo, key=path):
+            with me.box(style=me.Style(color="#88BBC5", cursor="pointer"), on_click=set_demo, key=path):
                 me.text(example_name)
 
 def set_demo(e: me.ClickEvent):
@@ -140,11 +168,11 @@ def section_box(section: Section):
             gap=28,
         )):
             for example in section.examples:
-                example_card(example.name)
+                example_card(example)
 
-def example_card(name: str):
+def example_card(example: Example):
     with me.box(
-        key=name,
+        key=example.name,
         on_click=navigate_example_card,
         style=me.Style(
             border=me.Border.all(BORDER_SIDE),
@@ -152,17 +180,18 @@ def example_card(name: str):
             cursor="pointer",
             width="min(100%, 150px)",
             border_radius=12,
-            background="#fff",
+            background="#FBF5E5",
         ),
     ):
-        image_url = ""
+        image_url = example.image_url
         me.box(style=me.Style(
             background=f'url("{image_url}") center / cover',
             height=112,
             width=150,
+            border_radius=12,
         ))
         me.text(
-            format_example_name(name),
+            format_example_name(example.name),
             style=me.Style(
                 font_weight=500,
                 font_size=18,

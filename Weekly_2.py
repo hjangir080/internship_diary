@@ -10,9 +10,7 @@ The second week was focused on advancing projects, learning new tools, and overc
   - Explored various word embedding techniques such as Word2Vec, GloVe, FastText, and ELMo, understanding their role in deducing relations and context.
   - Began planning a sea route optimization project using Dijkstra or A* algorithms and CrewAI agents.
 
-- **Route Optimization Project (
-
-Day 7):**
+- **Route Optimization Project (Day 7):**
   - Used GeoPandas for data reading and integrated CrewAI agents, tasks, and tools.
   - Encountered challenges with data processing due to RAM limitations when creating a graph using NetworkX.
 
@@ -45,20 +43,23 @@ Day 7):**
 )
 def app():
   header()
-  with me.box(style=me.Style(margin=me.Margin(left=12))):
+  with me.box(style=me.Style(margin=me.Margin(left=12),height="91%", overflow_y="auto",background="#F7F4F3")):
       me.markdown(SAMPLE_MARKDOWN)
 
 def header():
     with me.box(style=me.Style(
+        background="#1C2541",
         border=me.Border(bottom=me.BorderSide(style="solid", width=1, color="#dcdcdc")),
         overflow_x="clip",
     )):
         with me.box(style=me.Style(
+            padding=me.Padding(top=12, right=12, left=12, bottom=12),
             display="flex",
             align_items="end",
             justify_content="space-between",
-            margin=me.Margin(left=12, right=12, bottom=12, top=12),
+            # margin=me.Margin(left=12, right=12, bottom=12, top=12),
             font_size=24,
+            color="#BFACC8",
         )):
             with me.box(style=me.Style(display="flex")):
                 with me.box(style=me.Style(display="flex", cursor="pointer"), on_click=navigate_home):
