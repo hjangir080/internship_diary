@@ -3,8 +3,12 @@ import sys
 from dataclasses import dataclass
 
 import mesop as me
+
 import chatbot as chatbot
-import Daily_1 as Daily_1  # Ensure other blogs are imported similarly
+
+import Projects as Projects
+
+import Daily_1 as Daily_1 
 import Daily_2 as Daily_2
 import Daily_3 as Daily_3
 import Daily_4 as Daily_4
@@ -70,6 +74,12 @@ FIRST_SECTIONS = [
             Example(name="Weekly_2", image_url="https://i.ibb.co/bR4wxq4/june-weekly.png"),
             Example(name="Weekly_3", image_url="https://i.ibb.co/bR4wxq4/june-weekly.png"),
             Example(name="Weekly_4", image_url="https://i.ibb.co/bR4wxq4/june-weekly.png"),
+        ],
+    ),
+    Section(
+        name="Projects",
+        examples=[
+            Example(name="Projects", image_url="https://i.ibb.co/xGFPhX6/projects.webp"),
         ],
     ),
     Section(
