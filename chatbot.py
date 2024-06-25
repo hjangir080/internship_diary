@@ -41,7 +41,7 @@ def navigate_home(e: me.ClickEvent):
 
 
 
-async def transform(input: str, history: list[mel.ChatMessage]):
+def transform(input: str, history: list[mel.ChatMessage]):
     blog_data = read_all_files()
     context = " ".join(blog_data)
     messages = [
@@ -51,7 +51,7 @@ async def transform(input: str, history: list[mel.ChatMessage]):
     response = get_gpt_response(messages, context)
     yield response
 
-async def read_all_files():
+def read_all_files():
     blog_data = []
     # Read markdown files
     blog_data.extend(read_files_from_folder("./", ".md"))
@@ -59,7 +59,7 @@ async def read_all_files():
     blog_data.extend(read_files_from_folder("./", ".py"))
     return blog_data
 
-async def read_files_from_folder(folder, extension):
+def read_files_from_folder(folder, extension):
     data = []
     for filename in os.listdir(folder):
         if filename.endswith(extension):
@@ -84,7 +84,7 @@ openai.api_key = OPENAI_API_KEY
 client = openai.OpenAI()
 model = "gpt-4o"
 
-async def get_gpt_response(messages, context):
+def get_gpt_response(messages, context):
     response = client.chat.completions.create(
         model='gpt-4o',
         messages=[
