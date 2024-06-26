@@ -48,7 +48,7 @@ def navigate_home(e: me.ClickEvent):
 def transform(input: str, history: list[mel.ChatMessage]):
     blog_data = read_all_files()
     context = " ".join(blog_data)
-    messages = messages+[
+    messages = [
         {"role": "system", "content": "You are a helpful assistant that knows everything about the blog content of this website."},
         {"role": "user", "content": input}
     ]
@@ -91,7 +91,7 @@ model = "gpt-4o"
 def get_gpt_response(messages, context):
     response = client.chat.completions.create(
         model='gpt-4o',
-        messages=[
+        messages= messages + [
             {"role": "system", "content": "You are a helpful assistant that knows everything about the blog content of this website, i.e. all the data from daily and weekly posts."},
             {"role": "user", "content": messages[-1]['content']},
             {"role": "system", "content": context}
