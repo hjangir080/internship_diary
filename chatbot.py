@@ -4,6 +4,10 @@ import markdown
 import mesop as me
 import mesop.labs as mel
 
+import gevent.monkey
+
+gevent.monkey.patch_all()
+
 @me.page(
     security_policy=me.SecurityPolicy(
         allowed_iframe_parents=["https://google.github.io"]
