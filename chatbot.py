@@ -5,8 +5,9 @@ import mesop as me
 import mesop.labs as mel
 
 import gevent.monkey
-
 gevent.monkey.patch_all()
+
+import openai
 
 @me.page(
     security_policy=me.SecurityPolicy(
@@ -42,24 +43,21 @@ def header():
 def navigate_home(e: me.ClickEvent):
     me.navigate("/")
 
-
-
-
 def transform(input: str, history: list[mel.ChatMessage]):
     blog_data = read_all_files()
     context = " ".join(blog_data)
+    # print("Chat History:", history) 
     messages = [
         {"role": "system", "content": "You are a helpful assistant that knows everything about the blog content of this website, i.e. all the data from daily and weekly posts."},
-        {"role": "user", "content": input}
     ]
-    response = get_gpt_response(messages, context)
+    messages.extend([{"role": msg.role, "content": msg.content} for msg in history])
+    messages.append({"role": "user", "content": input})
+    response = get_gpt_response(messages,context)
     yield response
 
 def read_all_files():
     blog_data = []
-    # Read markdown files
     blog_data.extend(read_files_from_folder("./", ".md"))
-    # Read daily and weekly files
     blog_data.extend(read_files_from_folder("./", ".py"))
     return blog_data
 
@@ -74,10 +72,11 @@ def read_files_from_folder(folder, extension):
     return data
 
 # OpenAI Chatbot Integration
-from flask import Flask, request, render_template, session
+from flask import Flask, request, jsonify, session, render_template
 import openai
 
 app = Flask(__name__)
+
 app.secret_key = os.getenv('SECRET_KEY')
 
 OPENAI_API_KEY=os.getenv('OPENAI_API_KEY')
@@ -88,16 +87,16 @@ openai.api_key = OPENAI_API_KEY
 client = openai.OpenAI()
 model = "gpt-4o"
 
-@app.before_request
-def make_session_permanent():
-    session.permanent = True
-
 def get_gpt_response(messages, context):
+    
     response = client.chat.completions.create(
         model='gpt-4o',
-        messages= messages + [
-            {"role": "system", "content": context}
-        ]
+        messages=messages
+        # messages=[
+        #     {"role": "system", "content": "You are a helpful assistant that knows everything about the blog content of this website, i.e. all the data from daily and weekly posts."},
+        #     {"role": "user", "content": messages[-1]['content']},
+        #     {"role": "system", "content": context}
+        # ]
     )
     return response.choices[0].message.content
 
@@ -109,29 +108,20 @@ def index():
 def chat():
     user_prompt = request.form['prompt']
 
-    print("Session Before:", session.get('messages', 'No messages in session'))
-
-    # Retrieve conversation history from session
-    if 'messages' not in session:
-        session['messages'] = [
-            {"role": "system", "content": "You are an expert assistant. Your responses are based on the blog content and should be able to explain and answer concisely."}
-        ]
-    messages = session['messages']
-    # messages = session.get('messages', [
-    #     {"role": "system", "content": "You are a helpful assistant that knows everything about the blog content of this website, i.e. all the data from daily and weekly posts. Give a correct and concise answer."}
-    # ])
+    messages = session.get('messages', [
+        {"role": "system", "content": "You are an expert assistant. Your responses are based on the blog content and should be able to explain and answer concisely."}
+    ])
     
     messages.append({"role": "user", "content": user_prompt})
 
     blog_data = read_all_files()
     context = " ".join(blog_data)
     
-    model_response = get_gpt_response(messages, context)
+    completion = get_gpt_response(messages, context)
     
+    model_response = completion
     messages.append({"role": "assistant", "content": model_response})
-    session['messages'] = messages  # Save messages to session
-
-    print("Session Messages:", session['messages'])
+    session['messages'] = messages 
     
     return {"response": model_response}
 
