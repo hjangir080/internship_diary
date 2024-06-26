@@ -49,7 +49,7 @@ def transform(input: str, history: list[mel.ChatMessage]):
     blog_data = read_all_files()
     context = " ".join(blog_data)
     messages = [
-        {"role": "system", "content": "You are a helpful assistant that knows everything about the blog content of this website."},
+        {"role": "system", "content": "You are a helpful assistant that knows everything about the blog content of this website, i.e. all the data from daily and weekly posts."},
         {"role": "user", "content": input}
     ]
     response = get_gpt_response(messages, context)
@@ -92,8 +92,6 @@ def get_gpt_response(messages, context):
     response = client.chat.completions.create(
         model='gpt-4o',
         messages= messages + [
-            {"role": "system", "content": "You are a helpful assistant that knows everything about the blog content of this website, i.e. all the data from daily and weekly posts."},
-            {"role": "user", "content": messages[-1]['content']},
             {"role": "system", "content": context}
         ]
     )
@@ -109,7 +107,7 @@ def chat():
 
     # Retrieve conversation history from session
     messages = session.get('messages', [
-        {"role": "system", "content": "You are an expert assistant. Your responses are based on the blog content and should be able to explain and answer concisely."}
+        {"role": "system", "content": "You are a helpful assistant that knows everything about the blog content of this website, i.e. all the data from daily and weekly posts. Give a correct and concise answer."}
     ])
     
     messages.append({"role": "user", "content": user_prompt})
