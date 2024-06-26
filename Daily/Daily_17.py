@@ -12,9 +12,9 @@ Ensuring the chatbot could access the history of the chat was another critical t
 I will keep updating the blogs till my internship gets over.
 
 - **Topics Learned:**
-        -   Gevent for asynchronous operations
-        -   Repository organization
-        -   Chatbot history/session
+    - Gevent for asynchronous operations
+    - Repository organization
+    - Chatbot history/session
         
 """
 
