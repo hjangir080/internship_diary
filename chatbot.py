@@ -78,7 +78,7 @@ from flask import Flask, request, render_template, session
 import openai
 
 app = Flask(__name__)
-app.secret_key = os.urandom(24)  # Generate a secure secret key
+app.secret_key = os.getenv('SECRET_KEY')
 
 OPENAI_API_KEY=os.getenv('OPENAI_API_KEY')
 OPENAI_MODEL_NAME = os.getenv('OPENAI_MODEL_NAME', 'gpt-4o')
@@ -109,6 +109,8 @@ def index():
 def chat():
     user_prompt = request.form['prompt']
 
+    print("Session Before:", session.get('messages', 'No messages in session'))
+
     # Retrieve conversation history from session
     if 'messages' not in session:
         session['messages'] = [
@@ -124,11 +126,13 @@ def chat():
     blog_data = read_all_files()
     context = " ".join(blog_data)
     
-    completion = get_gpt_response(messages, context)
+    model_response = get_gpt_response(messages, context)
     
-    model_response = completion
     messages.append({"role": "assistant", "content": model_response})
     session['messages'] = messages  # Save messages to session
+
+    print("Session Messages:", session['messages'])
+    
     return {"response": model_response}
 
 if __name__ == '__main__':
