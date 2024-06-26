@@ -4,31 +4,31 @@ from dataclasses import dataclass
 
 import mesop as me
 
-import chatbot as chatbot
+import Chatbot.chatbot as chatbot
 
-import Projects as Projects
+import Projects.Projects as Projects
 
-import Daily_1 as Daily_1 
-import Daily_2 as Daily_2
-import Daily_3 as Daily_3
-import Daily_4 as Daily_4
-import Daily_5 as Daily_5
-import Daily_6 as Daily_6
-import Daily_7 as Daily_7
-import Daily_8 as Daily_8
-import Daily_9 as Daily_9
-import Daily_10 as Daily_10
-import Daily_11 as Daily_11
-import Daily_12 as Daily_12
-import Daily_13 as Daily_13
-import Daily_14 as Daily_14
-import Daily_15 as Daily_15
-import Daily_16 as Daily_16
+import Daily.Daily_1 as Daily_1 
+import Daily.Daily_2 as Daily_2
+import Daily.Daily_3 as Daily_3
+import Daily.Daily_4 as Daily_4
+import Daily.Daily_5 as Daily_5
+import Daily.Daily_6 as Daily_6
+import Daily.Daily_7 as Daily_7
+import Daily.Daily_8 as Daily_8
+import Daily.Daily_9 as Daily_9
+import Daily.Daily_10 as Daily_10
+import Daily.Daily_11 as Daily_11
+import Daily.Daily_12 as Daily_12
+import Daily.Daily_13 as Daily_13
+import Daily.Daily_14 as Daily_14
+import Daily.Daily_15 as Daily_15
+import Daily.Daily_16 as Daily_16
 
-import Weekly_1 as Weekly_1
-import Weekly_2 as Weekly_2
-import Weekly_3 as Weekly_3
-import Weekly_4 as Weekly_4
+import Weekly.Weekly_1 as Weekly_1
+import Weekly.Weekly_2 as Weekly_2
+import Weekly.Weekly_3 as Weekly_3
+import Weekly.Weekly_4 as Weekly_4
 
 # Ensure the current directory is in the system path
 current_dir = os.path.dirname(os.path.abspath(__file__))

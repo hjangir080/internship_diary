@@ -58,7 +58,8 @@ def transform(input: str, history: list[mel.ChatMessage]):
 def read_all_files():
     blog_data = []
     blog_data.extend(read_files_from_folder("./", ".md"))
-    blog_data.extend(read_files_from_folder("./", ".py"))
+    blog_data.extend(read_files_from_folder("./Daily/", ".py"))
+    blog_data.extend(read_files_from_folder("./Weekly/", ".py"))
     return blog_data
 
 def read_files_from_folder(folder, extension):
