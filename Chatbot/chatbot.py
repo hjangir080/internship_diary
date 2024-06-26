@@ -60,6 +60,7 @@ def read_all_files():
     blog_data.extend(read_files_from_folder("./", ".md"))
     blog_data.extend(read_files_from_folder("./Daily/", ".py"))
     blog_data.extend(read_files_from_folder("./Weekly/", ".py"))
+    blog_data.extend(read_files_from_folder("./Projects/", ".py"))
     return blog_data
 
 def read_files_from_folder(folder, extension):
@@ -89,6 +90,8 @@ client = openai.OpenAI()
 model = "gpt-4o"
 
 def get_gpt_response(messages, context):
+
+    messages.insert(1, {"role": "system", "content": context})
     
     response = client.chat.completions.create(
         model='gpt-4o',
