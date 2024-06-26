@@ -24,6 +24,7 @@ import Daily.Daily_13 as Daily_13
 import Daily.Daily_14 as Daily_14
 import Daily.Daily_15 as Daily_15
 import Daily.Daily_16 as Daily_16
+import Daily.Daily_17 as Daily_17
 
 import Weekly.Weekly_1 as Weekly_1
 import Weekly.Weekly_2 as Weekly_2
@@ -65,6 +66,7 @@ FIRST_SECTIONS = [
             Example(name="Daily_14", image_url="https://i.ibb.co/y44gLtv/june.png"),
             Example(name="Daily_15", image_url="https://i.ibb.co/y44gLtv/june.png"),
             Example(name="Daily_16", image_url="https://i.ibb.co/y44gLtv/june.png"),
+            Example(name="Daily_17", image_url="https://i.ibb.co/y44gLtv/june.png"),
         ],
     ),
     Section(
