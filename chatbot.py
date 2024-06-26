@@ -88,6 +88,10 @@ openai.api_key = OPENAI_API_KEY
 client = openai.OpenAI()
 model = "gpt-4o"
 
+@app.before_request
+def make_session_permanent():
+    session.permanent = True
+
 def get_gpt_response(messages, context):
     response = client.chat.completions.create(
         model='gpt-4o',
@@ -106,9 +110,14 @@ def chat():
     user_prompt = request.form['prompt']
 
     # Retrieve conversation history from session
-    messages = session.get('messages', [
-        {"role": "system", "content": "You are a helpful assistant that knows everything about the blog content of this website, i.e. all the data from daily and weekly posts. Give a correct and concise answer."}
-    ])
+    if 'messages' not in session:
+        session['messages'] = [
+            {"role": "system", "content": "You are an expert assistant. Your responses are based on the blog content and should be able to explain and answer concisely."}
+        ]
+    messages = session['messages']
+    # messages = session.get('messages', [
+    #     {"role": "system", "content": "You are a helpful assistant that knows everything about the blog content of this website, i.e. all the data from daily and weekly posts. Give a correct and concise answer."}
+    # ])
     
     messages.append({"role": "user", "content": user_prompt})
 
