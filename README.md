@@ -8,6 +8,7 @@ This repository contains my Internship Diary project, created using [Mesop](http
 - **Weekly Reports**: Summaries of my weekly progress and accomplishments.
 - **Projects**: Lists all the projects done during the internship.
 - **Chatbot Integration**: An AI-powered chatbot that can respond to queries by accessing my reports.
+- **Streaming Responses**: The chatbot now streams its responses for a more interactive experience.
 
 ## Technologies Used
 
