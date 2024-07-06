@@ -20,7 +20,7 @@ Started looking into how to use ML models to train a computer to play the Snake 
   security_policy=me.SecurityPolicy(
     allowed_iframe_parents=["https://google.github.io"]
   ),
-  path="/post/Daily_17",
+  path="/post/Daily_23",
 )
 def app():
   header()

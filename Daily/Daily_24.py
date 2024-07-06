@@ -19,7 +19,7 @@ Replicated a Snake game training model from YouTube and GitHub. Conducted an in-
   security_policy=me.SecurityPolicy(
     allowed_iframe_parents=["https://google.github.io"]
   ),
-  path="/post/Daily_17",
+  path="/post/Daily_24",
 )
 def app():
   header()

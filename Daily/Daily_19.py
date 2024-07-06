@@ -19,7 +19,7 @@ Worked on integrating the Assistant API with the same functionality. Created the
   security_policy=me.SecurityPolicy(
     allowed_iframe_parents=["https://google.github.io"]
   ),
-  path="/post/Daily_17",
+  path="/post/Daily_19",
 )
 def app():
   header()

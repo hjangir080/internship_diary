@@ -19,7 +19,7 @@ Improvised the chatbot by ensuring the asynchronous part worked correctly. Added
   security_policy=me.SecurityPolicy(
     allowed_iframe_parents=["https://google.github.io"]
   ),
-  path="/post/Daily_17",
+  path="/post/Daily_18",
 )
 def app():
   header()

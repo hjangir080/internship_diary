@@ -19,7 +19,7 @@ Continued efforts to enable streaming responses in the UI, testing various solut
   security_policy=me.SecurityPolicy(
     allowed_iframe_parents=["https://google.github.io"]
   ),
-  path="/post/Daily_17",
+  path="/post/Daily_21",
 )
 def app():
   header()

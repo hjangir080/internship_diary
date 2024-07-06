@@ -19,7 +19,7 @@ Explored a GitHub repository implementing the chatbot using Node.js and Next.js.
   security_policy=me.SecurityPolicy(
     allowed_iframe_parents=["https://google.github.io"]
   ),
-  path="/post/Daily_17",
+  path="/post/Daily_22",
 )
 def app():
   header()
