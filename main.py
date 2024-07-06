@@ -25,11 +25,25 @@ import Daily.Daily_14 as Daily_14
 import Daily.Daily_15 as Daily_15
 import Daily.Daily_16 as Daily_16
 import Daily.Daily_17 as Daily_17
+import Daily.Daily_18 as Daily_18
+import Daily.Daily_19 as Daily_19
+import Daily.Daily_20 as Daily_20
+import Daily.Daily_21 as Daily_21
+import Daily.Daily_22 as Daily_22
+import Daily.Daily_23 as Daily_23
+import Daily.Daily_24 as Daily_24
+import Daily.Daily_25 as Daily_25
+import Daily.Daily_26 as Daily_26
+import Daily.Daily_27 as Daily_27
+import Daily.Daily_28 as Daily_28
+import Daily.Daily_29 as Daily_29
 
 import Weekly.Weekly_1 as Weekly_1
 import Weekly.Weekly_2 as Weekly_2
 import Weekly.Weekly_3 as Weekly_3
 import Weekly.Weekly_4 as Weekly_4
+import Weekly.Weekly_5 as Weekly_5
+import Weekly.Weekly_6 as Weekly_6
 
 # Ensure the current directory is in the system path
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -67,6 +81,18 @@ FIRST_SECTIONS = [
             Example(name="Daily_15", image_url="https://i.ibb.co/y44gLtv/june.png"),
             Example(name="Daily_16", image_url="https://i.ibb.co/y44gLtv/june.png"),
             Example(name="Daily_17", image_url="https://i.ibb.co/y44gLtv/june.png"),
+            Example(name="Daily_18", image_url="https://i.ibb.co/y44gLtv/june.png"),
+            Example(name="Daily_19", image_url="https://i.ibb.co/y44gLtv/june.png"),
+            Example(name="Daily_20", image_url="https://i.ibb.co/y44gLtv/june.png"),
+            Example(name="Daily_21", image_url="https://i.ibb.co/y44gLtv/june.png"),
+            Example(name="Daily_22", image_url="https://i.ibb.co/y44gLtv/june.png"),
+            Example(name="Daily_23", image_url="https://i.ibb.co/y44gLtv/june.png"),
+            Example(name="Daily_24", image_url="https://i.ibb.co/y44gLtv/june.png"),
+            Example(name="Daily_25", image_url="https://i.ibb.co/y44gLtv/june.png"),
+            Example(name="Daily_26", image_url="https://i.ibb.co/y44gLtv/june.png"),
+            Example(name="Daily_27", image_url="https://i.ibb.co/y44gLtv/june.png"),
+            Example(name="Daily_28", image_url="https://i.ibb.co/y44gLtv/june.png"),
+            Example(name="Daily_29", image_url="https://i.ibb.co/y44gLtv/june.png"),
         ],
     ),
     Section(
@@ -76,6 +102,8 @@ FIRST_SECTIONS = [
             Example(name="Weekly_2", image_url="https://i.ibb.co/bR4wxq4/june-weekly.png"),
             Example(name="Weekly_3", image_url="https://i.ibb.co/bR4wxq4/june-weekly.png"),
             Example(name="Weekly_4", image_url="https://i.ibb.co/bR4wxq4/june-weekly.png"),
+            Example(name="Weekly_5", image_url="https://i.ibb.co/bR4wxq4/june-weekly.png"),
+            Example(name="Weekly_6", image_url="https://i.ibb.co/bR4wxq4/june-weekly.png"),
         ],
     ),
     Section(
