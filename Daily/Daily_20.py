@@ -8,11 +8,10 @@ SAMPLE_MARKDOWN = """
 
 Attempted to integrate the assistant with HTML and Flask but encountered issues with streaming responses in the UI. Looked into SSE clients for potential solutions. Realized a mistake of creating multiple agents and corrected it by deleting unnecessary agents.
 
-**Topics Learned:**
+- **Topics Learned:**
     - Assistant integration
     - SSE clients
     - Agent management
-
         
 """
 

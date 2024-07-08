@@ -8,7 +8,7 @@ SAMPLE_MARKDOWN = """
 
 Replicated a Snake game training model from YouTube and GitHub. Conducted an in-depth study into machine learning, auditing a course by Deeplearning.ai taught by Andrew Ng, focusing on supervised and unsupervised learning.
 
-**Topics Learned:**
+- **Topics Learned:**
     - Snake game training model
     - Supervised and unsupervised learning
         

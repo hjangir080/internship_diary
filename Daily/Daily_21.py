@@ -8,7 +8,7 @@ SAMPLE_MARKDOWN = """
 
 Continued efforts to enable streaming responses in the UI, testing various solutions. Explored the Streamlit library for mimicking streaming but it didn't work as expected. Reviewed code shared by a supervisor. The problem with streaming responses in the UI remained unresolved.
 
-**Topics Learned:**
+- **Topics Learned:**
     - Streaming responses
     - Streamlit library
         

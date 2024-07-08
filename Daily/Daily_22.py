@@ -8,7 +8,7 @@ SAMPLE_MARKDOWN = """
 
 Explored a GitHub repository implementing the chatbot using Node.js and Next.js. After assessing the repository, moved on to exploring reinforcement learning.
 
-**Topics Learned:**
+- **Topics Learned:**
     - Node.js and Next.js
     - Reinforcement learning concepts
         

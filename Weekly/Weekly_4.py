@@ -8,16 +8,16 @@ SAMPLE_MARKDOWN = """
 
 **Summary:** This week, I focused on developing and hosting an internship diary website using Mesop and Python, ensuring it worked asynchronously and included a chatbot. Additionally, I worked on integrating the Assistant API with the website.
 
-**Accomplishments:**
-        - **Internship Diary Website:** Developed and hosted a website for daily and weekly summaries with a chatbot.
-        - **Asynchronous Performance:** Integrated Gevent for better asynchronous performance.
-        - **Chatbot Improvement:** Improved the chatbot's asynchronous functionality and added output streaming.
-        - **API Integration:** Attempted to integrate the Assistant API with the website.
+- **Accomplishments:**
+    - **Internship Diary Website:** Developed and hosted a website for daily and weekly summaries with a chatbot.
+    - **Asynchronous Performance:** Integrated Gevent for better asynchronous performance.
+    - **Chatbot Improvement:** Improved the chatbot's asynchronous functionality and added output streaming.
+    - **API Integration:** Attempted to integrate the Assistant API with the website.
 
-**Challenges:**
-        - **Asynchronous Functionality:** Ensuring the website and chatbot could function asynchronously on multiple devices.
-        - **Integration Issues:** Struggling to integrate the Assistant API with the Mesop UI.
-        - **Output Streaming:** Ensuring the streaming functionality worked seamlessly.
+- **Challenges:**
+    - **Asynchronous Functionality:** Ensuring the website and chatbot could function asynchronously on multiple devices.
+    - **Integration Issues:** Struggling to integrate the Assistant API with the Mesop UI.
+    - **Output Streaming:** Ensuring the streaming functionality worked seamlessly.
 
 """
 

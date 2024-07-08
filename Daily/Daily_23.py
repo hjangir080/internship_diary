@@ -8,11 +8,11 @@ SAMPLE_MARKDOWN = """
 
 Started looking into how to use ML models to train a computer to play the Snake game in Python and PyTorch. Focused on Deep Q-Learning for implementation.
 
-**Topics Learned:**
+- **Topics Learned:**
     - ML models for Snake game
     - Python and PyTorch
     - Deep Q-Learning
-        
+
 """
 
 

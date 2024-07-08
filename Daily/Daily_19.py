@@ -8,7 +8,7 @@ SAMPLE_MARKDOWN = """
 
 Worked on integrating the Assistant API with the same functionality. Created the assistant but encountered difficulties integrating it with the Mesop UI. Tested different approaches to resolve the issue.
 
-**Topics Learned:**
+- **Topics Learned:**
     - Assistant API
     - Integration challenges
         

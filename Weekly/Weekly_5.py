@@ -6,14 +6,14 @@ SAMPLE_MARKDOWN = """
 #### Week 5 (01/07/2024 - 05/07/2024)
 **Summary:** This week, I attempted to integrate the assistant with HTML and Flask, faced challenges with streaming responses in the UI, and explored reinforcement learning by training a computer to play the Snake game.
 
-**Accomplishments:**
+- **Accomplishments:**
     - **Assistant Integration:** Attempted integrating the assistant with HTML and Flask, exploring SSE clients.
     - **Streaming Responses:** Continued efforts to enable streaming responses in the UI.
     - **Reinforcement Learning Exploration:** Explored reinforcement learning concepts and their applications.
     - **Snake Game Training:** Replicated a model to train a computer to play the Snake game using Python, PyTorch, and Deep Q-Learning.
     - **Machine Learning Study:** Conducted an in-depth study into machine learning, auditing a course by Andrew Ng.
 
-**Challenges:**
+- **Challenges:**
     - **Integration Issues:** Continued challenges with integrating the assistant with different UI frameworks.
     - **Streaming Functionality:** Struggled to implement streaming responses in the chatbot UI.
     - **Learning Curve:** Steep learning curve in understanding and implementing reinforcement learning concepts.

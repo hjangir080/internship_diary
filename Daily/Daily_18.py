@@ -8,7 +8,7 @@ SAMPLE_MARKDOWN = """
 
 Improvised the chatbot by ensuring the asynchronous part worked correctly. Added the ability to stream outputs instead of showing the entire response at once, reducing waiting time and improving user experience. Tested the new features for proper functionality.
 
-**Topics Learned:**
+- **Topics Learned:**
     - Asynchronous functionality
     - Output streaming
         
